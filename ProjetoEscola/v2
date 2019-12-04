@@ -1,0 +1,120 @@
+#include <stdio.h>
+#include <string.h>
+#define TAM_ALUNOS 5
+
+typedef struct dma {
+
+	int dia;
+	int mes;
+	int ano;
+
+} data;
+
+typedef struct dadosaluno {
+
+  int matricula;
+  char nome[50];
+  char sexo;
+  data nascimento;
+  char cpf[15];
+
+} Aluno;
+
+typedef struct dadosprof {
+
+  int matricula;
+  char nome[50];
+  char sexo;
+  data nascimento;
+  int cpf[15];
+
+} Professor;
+
+typedef struct dadosdisciplina{
+
+    char nome[50];
+    char codigo[6];
+    char semetre[2];
+    Professor professor;
+
+} disciplina;
+
+int main(){
+	
+	Aluno aluno[5];
+	int opcao = 1;
+	int contaluno = 0;
+	
+	while (opcao != 0){
+
+		printf("-----------MENU-----------\n\n");
+		printf("Escolha uma opcao\n\n");
+		printf("[1] Inserir aluno\n");
+		printf("[2] Inserir professor\n");
+		printf("[3] Inserir Disciplinas\n");
+		printf("[4] Inserir/Excluir aluno de uma disciplina\n");
+		printf("[5] Relatorios\n");
+		printf("[0] Sair\n\n");
+		scanf("%d", &opcao);
+		
+		switch (opcao){
+			
+			case 1:
+				/* Nao sei fazer
+				printf ("Cadastro de Aluno:\n\n");
+				printf ("Informe o nome do aluno:\n");
+				*/
+				
+				printf ("Informe a matricula do aluno:\n");
+				scanf ("%d", &aluno[contaluno].matricula);
+				
+				printf ("Informe o Sexo do aluno:\n");
+				scanf ("%s", &aluno[contaluno].sexo);
+				
+				printf ("Informe os dados de nascimento do aluno:\n");
+				printf ("Dia:\n");
+				scanf ("%d", &aluno[contaluno].nascimento.dia);
+				
+				while ((aluno[contaluno].nascimento.dia) > 31 || (aluno[contaluno].nascimento.dia) < 1){
+					printf ("Dia informado INVALIDO\n");
+					printf ("Dia:\n");
+					scanf ("%d", &aluno[contaluno].nascimento.dia);
+				}
+				printf ("Mes:\n");
+				scanf ("%d", &aluno[contaluno].nascimento.mes);
+				
+				while ((aluno[contaluno].nascimento.mes) > 12 || (aluno[contaluno].nascimento.mes) < 1){
+					printf ("Mes informado INVALIDO\n");
+					printf ("Mes:\n");
+					scanf ("%d", &aluno[contaluno].nascimento.mes);
+				}
+				printf ("Ano:\n");
+				scanf ("%d", &aluno[contaluno].nascimento.ano);
+				
+				while ((aluno[contaluno].nascimento.ano) > 2019 || (aluno[contaluno].nascimento.ano) < 1000){
+					printf ("Ano informado INVALIDO\n");
+					printf ("Ano:\n");
+					scanf ("%d", &aluno[contaluno].nascimento.ano);
+				}
+				
+				/*printf ("Informe o CPF no formato XXX.XXX.XXX-06:\n");*/
+				
+				break;
+			
+			case 2:
+				break;
+			
+			case 3:
+				break;
+			
+			case 4:
+				break;
+			
+			case 5:
+				break;
+			
+		}
+	}
+    return 0;
+
+}
