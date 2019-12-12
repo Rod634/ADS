@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Basededados
+comment1.params=
+comment1.target=Basededados()
+comment2.params=musica
+comment2.target=void\ addMusic(Music)
+comment3.params=nome\ duracao\ nova
+comment3.target=Playlist\ setnovaplay(java.lang.String,\ long,\ Playlist)
+numComments=4
