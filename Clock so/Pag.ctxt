@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Pag
+comment1.params=id\ contP
+comment1.target=Pag(int,\ int)
+comment2.params=id
+comment2.target=void\ setId(int)
+comment3.params=
+comment3.target=int\ getId()
+comment4.params=
+comment4.target=Pag\ getProximo()
+comment5.params=node
+comment5.target=void\ setProximo(Pag)
+comment6.params=cont
+comment6.target=void\ setCont(int)
+comment7.params=
+comment7.target=int\ getCont()
+comment8.params=
+comment8.target=void\ NoUsePage()
+numComments=9

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Clock
+comment1.params=
+comment1.target=Clock()
+comment2.params=
+comment2.target=int\ quantDeNo()
+comment3.params=
+comment3.target=Pag\ getNo()
+comment4.params=
+comment4.target=void\ proximoNo()
+comment5.params=node
+comment5.target=void\ add(Pag)
+numComments=6

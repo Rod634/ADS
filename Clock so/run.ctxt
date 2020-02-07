@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=run
+comment1.params=clock
+comment1.target=run(Clock)
+comment2.params=
+comment2.target=void\ rotation()
+numComments=3
